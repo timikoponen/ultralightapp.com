@@ -1,0 +1,330 @@
+body {
+    background-color: #131313;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Lato', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 12px;
+}
+#content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main {
+    display: block;
+    width: 100%;
+    position: relative;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+#background {
+    position: absolute;
+    width: 100%;
+    height: 850px;
+    opacity: 1;
+    background-image: url("bg_gradient.jpg");
+    background-size: cover;
+    background-position: center top;
+}
+#background-gradient {
+    position: absolute;
+    top: 725px;
+    width: 100%;
+    height: 125px;
+    opacity: 1;
+    background-image: url("gradient.png");
+    background-size: contain;
+}
+
+#hero {
+    padding: 90px 0 0;
+    height: 570px;
+    display: flex;
+    margin: 0 auto;
+}
+
+#hero .left, #hero .right {
+    text-align: center;
+    width: 50%;
+}
+
+@media (min-width: 1300px) {
+    #hero {
+        width: 80%;
+    }
+}
+
+@media (max-width: 900px) {
+    #hero {
+        display: block;
+        height: 620px;
+    }
+    #hero .left, #hero .right {
+        width: 100%;
+    }
+    
+    #hero .video {
+        display: none;
+    }
+}
+
+
+#hero .video {
+    position: relative;
+    top: 50px;
+    height: 500px;
+    background-image: url("ultralight.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+#hero .video video {
+    height: 378px;
+    position: relative;
+    top: 62px;
+}
+
+#icon {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+}
+#logo {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 85px auto 20px;
+    max-width: 80%;
+}
+@media (max-width: 800px) {
+    #logo {
+        max-width: 95%;
+    }
+}
+
+h1, h2 {
+    font-weight: 300;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 16px;
+    margin: 85px auto 0;
+    max-width: 320px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#appstore {
+    width: 160px;
+    margin: 36px auto;
+}
+
+#trailer {
+    margin: 80px 0;
+    position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+#trailer-iframe {
+    position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+@media (max-width: 900px) {
+    #trailer {
+        padding-bottom: 0;
+        height: 600px;
+        max-height: 160vw;
+        max-width: 300px;
+        background-image: url("ultralight.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+        margin: 80px auto;
+    }
+    #trailer-iframe {
+        width: 88%;
+        height: 122vw;
+        margin: 25% 6% 0;
+        max-height: 463px;
+    }
+}
+
+h3 {
+    font-size: 24px;
+}
+
+#intro, .feature {
+    font-weight: 300;
+}
+
+#intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+}
+.feature .description {
+    font-size: 16px;
+}
+
+#intro h3 {
+    max-width: 520px;
+    margin: 30px auto 60px;
+}
+
+.feature .image {
+    width: 100%;
+    text-align: center;
+}
+
+.feature img {
+    width: 240px;
+}
+
+@media (min-width: 600px) {
+    #features {
+        max-width: 700px;
+        margin: 0 auto;
+    }  
+    .feature .description {
+        padding-right: 50px;
+    }
+    .feature.right .description {
+        text-align: right;
+        padding-left: 50px;
+        padding-right: 0;
+    }
+    .feature.right .image {
+        order: -1;
+    }
+    .feature .image {
+        text-align: right;
+    }
+    .feature.right .image {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1000px) {
+    .feature .description {
+        padding-right: 120px;
+    }
+    .feature.right .description {
+        padding-left: 120px;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .feature {
+        display: block;
+        text-align: center;
+    }  
+    h1 {
+        font-size: 20px;
+    }
+    .feature .description {
+        padding-bottom: 20px;
+        font-size: 16px;
+    }
+}
+
+#download-now {
+    margin-top: 100px;
+    text-align: center;
+    height: 100px;
+}
+
+footer {
+    text-align: center;
+    line-height: 48px;
+    font-size: 14px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+footer a {
+    margin: 0 8px;
+}
+
+#hashtag {
+    font-size: 20px;
+}
+
+#ig, #fb, #tw {
+    display: inline;
+    margin: 6px;
+}
+
+#ig img, #fb img, #tw img {
+    width: 30px;
+    height: 30px;
+}
+
+#articles {
+    padding-top: 40px;
+    font-size: 16px;
+    text-align: center;
+    text-align: center;
+}
+#articles p {
+    padding: 8px 0;
+}
+#articles .title {
+    font-size: 20px;
+}
+.fb-like {
+    display: block !important;
+}
+
+#feedback {
+    font-size: 16px;
+    margin-bottom: 80px;
+}
+
+#feedback img {
+    max-width: 100%;
+}
+
+h4 {
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+#privacy-policy {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+#privacy-policy h1, #privacy-policy h2 {
+    text-align: left;
+    margin: 15px 0;
+    font-weight: bold;
+    max-width: none;
+}
+#privacy-policy a {
+    text-decoration: underline;
+}
