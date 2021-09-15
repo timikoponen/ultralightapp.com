@@ -38,6 +38,12 @@
     ga('create', 'UA-60168240-2', 'auto');
     ga('send', 'pageview');
     </script>
+    <script>
+    if(document.location.href.indexOf('?filter=') > -1) {
+          document.location.href = "ultralight://" + decodeURIComponent(document.location.href.split("?filter=").pop().split("&")[0]);
+          setTimeout(function(){ document.location.href = "https://www.ultralightapp.com" }, 5000);
+      }
+    </script>
 </head>
 
 <body>
